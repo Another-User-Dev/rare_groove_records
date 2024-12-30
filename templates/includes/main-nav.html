@@ -17,10 +17,11 @@
                 Formats
             </a>
             <div class="dropdown-menu border-0">
-                <a href="#" class="dropdown-item">7inch-vinyl</a>
-                <a href="#" class="dropdown-item">12inch-vinyl</a>
-                <a href="#" class="dropdown-item">LP-vinyl</a>
-                <a href="#" class="dropdown-item">All formats</a>
+                <a href="{% url 'products' %}?format=Single_7inch"  class="dropdown-item">7 inch single vinyl</a>
+                <a href="{% url 'products' %}?format=Single_12inch" class="dropdown-item">12inch single vinyl</a>
+                <a href="{% url 'products' %}?format=Vinyl_LP" class="dropdown-item">Album LP vinyl</a>
+                <a href="{% url 'products' %}?format=CD" class="dropdown-item">CD</a>
+                <a href="{% url 'products' %}?format=Vinyl_LP,Single_12inch,Single_7inch" class="dropdown-item">All formats</a>
             </div>          
         </li>
 
@@ -29,10 +30,10 @@
                 Genre
             </a>
             <div class="dropdown-menu border-0">
-                <a href="#" class="dropdown-item">Jazz</a>
-                <a href="#" class="dropdown-item">Funk</a>
-                <a href="#" class="dropdown-item">Soul</a>
-                <a href="#" class="dropdown-item">All genres</a>
+                <a href="{% url 'products' %}?genre=Jazz" class="dropdown-item">Jazz</a>
+                <a href="{% url 'products' %}?genre=Funk" class="dropdown-item">Funk</a>
+                <a href="{% url 'products' %}?genre=Soul" class="dropdown-item">Soul</a>
+                <a href="{% url 'products' %}?genre=Jazz,Funk,Soul,CD" class="dropdown-item">All genres</a>
             </div>
             
             <li class="nav-item dropdown">
@@ -40,10 +41,10 @@
                     Specials
                 </a>
                 <div class="dropdown-menu border-0">
-                    <a href="#" class="dropdown-item">New arrivals</a>
-                    <a href="#" class="dropdown-item">Promotions</a>
-                    <a href="#" class="dropdown-item">Clearance</a>
-                    <a href="#" class="dropdown-item">All Specials</a>
+                    <a href="{% url 'products' %}?category=New_arrivals" class="dropdown-item">New arrivals</a>
+                    <a href="{% url 'products' %}?category=Promotions" class="dropdown-item">Promotions</a>
+                    <a href="{% url 'products' %}?category=Clearance" class="dropdown-item">Clearance</a>
+                    <a href="{% url 'products' %}?category=New_arrivals,Promotions,Clearance" class="dropdown-item">All Specials</a>
                 </div>          
         </li>
     </ul>
