@@ -21,7 +21,7 @@
                 <a href="{% url 'products' %}?format=Single_12inch" class="dropdown-item">12inch single vinyl</a>
                 <a href="{% url 'products' %}?format=Vinyl_LP" class="dropdown-item">Album LP vinyl</a>
                 <a href="{% url 'products' %}?format=CD" class="dropdown-item">CD</a>
-                <a href="{% url 'products' %}?format=Vinyl_LP,Single_12inch,Single_7inch" class="dropdown-item">All formats</a>
+                <a href="{% url 'products' %}?format=Vinyl_LP,Single_12inch,Single_7inch,CD" class="dropdown-item">All formats</a>
             </div>          
         </li>
 
@@ -31,9 +31,10 @@
             </a>
             <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?genre=Jazz" class="dropdown-item">Jazz</a>
+                <a href="{% url 'products' %}?genre=Jazz-Funk" class="dropdown-item">Jazz-Funk</a>
                 <a href="{% url 'products' %}?genre=Funk" class="dropdown-item">Funk</a>
                 <a href="{% url 'products' %}?genre=Soul" class="dropdown-item">Soul</a>
-                <a href="{% url 'products' %}?genre=Jazz,Funk,Soul,CD" class="dropdown-item">All genres</a>
+                <a href="{% url 'products' %}?genre=Jazz,Funk,Soul,Jazz-Funk" class="dropdown-item">All genres</a>
             </div>
             
             <li class="nav-item dropdown">
